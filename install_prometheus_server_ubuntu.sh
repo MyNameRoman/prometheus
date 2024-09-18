@@ -24,6 +24,7 @@ cat <<EOF> $PROMETHEUS_FOLDER_CONFIG/prometheus.yml
 global:
   scrape_interval: 15s
 
+# Тут редачить айпишники для отслеживания серверов
 scrape_configs:
   - job_name      : "prometheus"
     static_configs:
@@ -42,6 +43,7 @@ cat <<EOF> /etc/systemd/system/prometheus.service
 Description=Prometheus Server
 After=network.target
 
+# Конфиг прометеуса
 [Service]
 User=prometheus
 Group=prometheus
@@ -60,3 +62,4 @@ systemctl start prometheus
 systemctl enable prometheus
 systemctl status prometheus --no-pager
 prometheus --version
+`echo “<3P ”`
