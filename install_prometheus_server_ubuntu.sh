@@ -6,7 +6,7 @@
 #--------------------------------------------------------------------
 
 # Указываем версию Prometheus
-PROMETHEUS_VERSION="2.46.0"
+PROMETHEUS_VERSION="2.54.1"
 
 PROMETHEUS_FOLDER_CONFIG="/etc/prometheus"
 PROMETHEUS_FOLDER_TSDATA="/etc/prometheus/data"
